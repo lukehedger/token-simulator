@@ -1,0 +1,31 @@
+{
+  "name": "@boltzmann/simulation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "pack build"
+  },
+  "dependencies": {
+    "immer": "2.1.1"
+  },
+  "devDependencies": {
+    "@pika/pack": "0.3.5",
+    "@pika/plugin-build-node": "0.3.14",
+    "@pika/plugin-build-web": "0.3.14",
+    "@pika/plugin-standard-pkg": "0.3.14"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ]
+    ]
+  }
+}

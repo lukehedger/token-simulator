@@ -1,0 +1,15 @@
+{
+  "name": "token-simulator",
+  "version": "1.0.0",
+  "description": "Simulate token-based, multi-agent systems",
+  "repository": "https://github.com/lukehedger/token-simulator.git",
+  "author": "Luke Hedger",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "boltzmann",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build"
+  },
+  "workspaces": [
+    "cli",
+    "packages/*"
+  ]
+}
