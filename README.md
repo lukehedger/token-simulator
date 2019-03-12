@@ -25,7 +25,6 @@ yarn build
 ```
 
 ### Architecture
-- `cli/` - token simulator command line program and tools
 - `examples/` - example token simulations
 - `packages/` - core token simulator plugins
 
