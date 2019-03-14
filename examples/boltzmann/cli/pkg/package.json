@@ -1,0 +1,24 @@
+{
+  "name": "boltzmann-cli",
+  "version": "1.0.0",
+  "license": "MIT",
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "pika": true,
+  "sideEffects": false,
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "dependencies": {
+    "@boltzmann/simulation": "file:../packages/simulation/pkg",
+    "sade": "1.4.2"
+  },
+  "devDependencies": {
+    "@pika/pack": "0.3.5",
+    "@pika/plugin-build-node": "0.3.14",
+    "@pika/plugin-standard-pkg": "0.3.14"
+  },
+  "private": true
+}

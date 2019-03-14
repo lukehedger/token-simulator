@@ -1,0 +1,25 @@
+{
+  "name": "@boltzmann/simulation",
+  "version": "1.0.0",
+  "license": "MIT",
+  "esnext": "dist-src/index.js",
+  "module": "dist-web/index.js",
+  "main": "dist-node/index.js",
+  "pika": true,
+  "sideEffects": false,
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "dependencies": {
+    "immer": "2.1.1"
+  },
+  "devDependencies": {
+    "@pika/pack": "0.3.5",
+    "@pika/plugin-build-node": "0.3.14",
+    "@pika/plugin-build-web": "0.3.14",
+    "@pika/plugin-standard-pkg": "0.3.14"
+  },
+  "private": true
+}
