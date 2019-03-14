@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "start": "yarn workspaces run start",
     "build": "yarn workspaces run build"
   },
   "workspaces": [

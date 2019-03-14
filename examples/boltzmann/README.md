@@ -12,7 +12,5 @@ git clone git@github.com:lukehedger/token-simulator.git
 cd token-simulator/examples/boltzmann/
 yarn
 yarn build
-
-cd cli/
 yarn start
 ```
