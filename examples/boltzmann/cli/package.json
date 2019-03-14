@@ -8,6 +8,7 @@
     "build": "pack build"
   },
   "dependencies": {
+    "@boltzmann/simulation": "file:../packages/simulation/pkg",
     "sade": "1.4.2"
   },
   "devDependencies": {

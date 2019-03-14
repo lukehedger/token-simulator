@@ -9,7 +9,11 @@ A simple model of agents exchanging wealth.
 ## Run simulation
 ```sh
 git clone git@github.com:lukehedger/token-simulator.git
-cd token-simulator/examples/boltzmann/
+cd token-simulator/
+yarn
+yarn build
+
+cd examples/boltzmann/
 yarn
 yarn build
 

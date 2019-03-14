@@ -1,11 +1,11 @@
 import produce from "immer";
-import { Agent, AgentType } from "@token-simulator/bar-agents";
+// import { Agent, AgentType } from "@token-simulator/bar-agents";
 
 // TODO: Package core.protocol
 const Protocol = {
   systemClock: 1000,
   totalSupply: 100,
-  wealthThreshold: 1
+  wealthThreshold: 1,
 };
 
 // TODO: Package core.simulation
@@ -15,7 +15,15 @@ const Simulation = options => {
     transactions: {},
     processTransaction: () => {},
     objective: () => {},
-    options: options
+    options: options,
+  };
+};
+
+const Agent = ({ id, balance, type }) => {
+  return {
+    id: id,
+    balance: balance,
+    type: type,
   };
 };
 
@@ -29,7 +37,7 @@ export const init = ({ debug = false, totalAgents = 10 } = {}) => {
     simulation.agents[id] = Agent({
       id: id,
       balance: Protocol.totalSupply / totalAgents,
-      type: AgentType.Altruistic
+      type: "altruistic",
     });
   }
 
@@ -57,7 +65,7 @@ export const init = ({ debug = false, totalAgents = 10 } = {}) => {
         const transaction = {
           amount: Protocol.wealthThreshold,
           from: agent.id,
-          to: recipient.id
+          to: recipient.id,
         };
 
         simulation.processTransaction(transaction);
