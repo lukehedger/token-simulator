@@ -31,9 +31,6 @@ yarn build
 ## Examples
 - [Boltzmann wealth model](examples/boltzmann/)
 - Life <!-- TODO -->
-- ERC20 x Boltzmann wealth model <!-- TODO -->
-- ETH <!-- TODO -->
-- KRD (using KORD protocol package) <!-- TODO -->
 
 ## TODO
 - Formalise plugin API `f(tx) => tx`
